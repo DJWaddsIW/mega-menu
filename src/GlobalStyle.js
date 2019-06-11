@@ -50,6 +50,9 @@ const GlobalStyle = createGlobalStyle`
     border-collapse: collapse;
     border-spacing: 0;
   }
+  html, body, #root {
+    height: 100%;
+  }
 `;
 
 export default GlobalStyle;
