@@ -1,0 +1,144 @@
+{
+  "menu": [
+    {
+      "title": "Fragrance",
+      "url": "",
+      "subCategories": [
+        {
+          "title": "All",
+          "url": "",
+          "links": [
+            {
+              "title": "Our Exclusives",
+              "url": "www.mag.co.uk/fragrance/all/our-exclusives"
+            },
+            {
+              "title": "Best Sellers",
+              "url": "www.mag.co.uk/fragrance/all/best-sellers"
+            },
+            {
+              "title": "Gift Sets",
+              "url": "www.mag.co.uk/fragrance/all/gift-sets"
+            }
+          ]
+        },
+        {
+          "title": "Perfume & Aftershave",
+          "url": "",
+          "links": [
+            {
+              "title": "For Her",
+              "url": "www.mag.co.uk/fragrance/perfume-&-aftershave/for-her"
+            },
+            {
+              "title": "For Him",
+              "url": "www.mag.co.uk/fragrance/perfume-&-aftershave/for-him"
+            }
+          ]
+        },
+        {
+          "title": "Popular Brands",
+          "url": "",
+          "links": [
+            {
+              "title": "Estee",
+              "url": "www.mag.co.uk/fragrance/popular-brands/estee"
+            },
+            {
+              "title": "Clinque",
+              "url": "www.mag.co.uk/fragrance/perfume-&-aftershave/clinque"
+            },
+            {
+              "title": "Lancome",
+              "url": "www.mag.co.uk/fragrance/perfume-&-aftershave/lancome"
+            },
+            {
+              "title": "Hugo Boss",
+              "url": "www.mag.co.uk/fragrance/perfume-&-aftershave/hugo-boss"
+            },
+            {
+              "title": "Jo Molone London",
+              "url": "www.mag.co.uk/fragrance/perfume-&-aftershave/jo-molone-london"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Makeup",
+      "url": "",
+      "subCategories": [
+        {
+          "title": "All",
+          "url": "",
+          "links": [
+            {
+              "title": "Our Exclusives",
+              "url": "www.mag.co.uk/makeup/all/our-exclusives"
+            },
+            {
+              "title": "Best Sellers",
+              "url": "www.mag.co.uk/makeup/best-sellers"
+            },
+            {
+              "title": "Gift Sets",
+              "url": "www.mag.co.uk/makeup/gift-sets"
+            }
+          ]
+        },
+        {
+          "title": "Face",
+          "url": "",
+          "links": [
+            {
+              "title": "Blusher",
+              "url": "www.mag.co.uk/makeup/face/blusher"
+            },
+            {
+              "title": "Concealer",
+              "url": "www.mag.co.uk/makeup/face/concealer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Skin Care",
+      "url": "",
+      "subCategories": [
+        {
+          "title": "All",
+          "url": "",
+          "links": [
+            {
+              "title": "Our Exclusives",
+              "url": "www.mag.co.uk/skin-care/all/our-exclusives"
+            },
+            {
+              "title": "Best Sellers",
+              "url": "www.mag.co.uk/skin-care/best-sellers"
+            },
+            {
+              "title": "Gift Sets",
+              "url": "www.mag.co.uk/skin-care/gift-sets"
+            }
+          ]
+        },
+        {
+          "title": "Face",
+          "url": "",
+          "links": [
+            {
+              "title": "Cleanser",
+              "url": "www.mag.co.uk/skin-care/face/cleanser"
+            },
+            {
+              "title": "Repair",
+              "url": "www.mag.co.uk/skin-care/face/repair"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
