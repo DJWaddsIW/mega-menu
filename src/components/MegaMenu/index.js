@@ -1,21 +1,30 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
-import SubMenu from './SubMenu';
-import { fadeIn } from '../../styles/keyframes';
+import SubMenu from "./SubMenu";
+import { fadeIn } from "../../styles/keyframes";
 
-const Wrapper = styled.ul`
+const MenuWrapper = styled.div`
   font-family: Nationale, sans-serif;
   background-color: white;
+  border-top: 1px solid #e1e8ec;
+  border-bottom: 2px double #e1e8ec;
+  font-size: 16px;
+`;
+
+const Menu = styled.ul`
   display: flex;
-  border-top: 2px solid #E1E8EC;
-  border-bottom: 2px solid #E1E8EC;
+  width: fit-content;
+  &:hover li:first-child > a {
+    border: 0 none;
+  }
 `;
 
 const ListItem = styled.li`
   text-align: center;
   position: relative;
   display: block;
-  width: 100%;
+  padding: 0 10px;
+  margin-bottom: -2px;
   > ul {
     display: none;
     opacity: 0;
@@ -26,32 +35,41 @@ const ListItem = styled.li`
     opacity: 1;
   }
   &:hover > a {
+    border-bottom: 4px solid !important;
+  }
+  &:first-child > a {
     border-bottom: 4px solid;
   }
 `;
 
 const Link = styled.a`
-  color: #042E61;
+  color: #032f61;
   text-decoration: none;
-  font-size: 16px;
   font-weight: 600;
   font-weight: bolder;
   display: inline-block;
   padding: 8px 10px;
+  font-size: 16px;
 `;
 
 const MegaMenu = ({ menu }) => {
   return (
-    <Wrapper>
-      <ListItem><Link href="www.mag.co.uk">Home</Link></ListItem>
-      {menu.map(item => {
-        return <ListItem key={item.title}>
-          <Link href={item.url}>{item.title}</Link>
-          <SubMenu subCategories={item.subCategories} />
+    <MenuWrapper>
+      <Menu>
+        <ListItem>
+          <Link href="www.mag.co.uk">Home</Link>
         </ListItem>
-      })}
-    </Wrapper>
+        {menu.map(item => {
+          return (
+            <ListItem key={item.title}>
+              <Link href={item.url}>{item.title}</Link>
+              <SubMenu subCategories={item.subCategories} />
+            </ListItem>
+          );
+        })}
+      </Menu>
+    </MenuWrapper>
   );
-}
+};
 
 export default MegaMenu;

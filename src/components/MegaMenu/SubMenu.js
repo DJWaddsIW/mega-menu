@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
-import LinkOptions from './Options';
+import LinkOptions from "./Options";
 
 const Wrapper = styled.ul`
   display: flex;
@@ -16,32 +16,36 @@ const Wrapper = styled.ul`
 
 const ListItem = styled.li`
   border-right: 1px solid rgb(226, 232, 235);
-  width: 300px;
-  padding: 10px;
+  width: 320px;
+  padding: 15px;
+  box-sizing: border-box;
 `;
 
 const Link = styled.a`
-  color: #042E61;
+  color: #032f61;
   text-decoration: none;
   display: inline-block;
-  font-weight: 800;
-  font-size: 14px;
+  font-weight: bolder;
+  font-size: 16px;
   padding: 8px 10px;
   &:hover {
     text-decoration: underline;
   }
 `;
 
-const SubMenu = ({subCategories}) => {
-  return <Wrapper>
-    {subCategories.map(subCategory => {
-      return <ListItem key={subCategory.title}>
-        <Link href={subCategory.url}>{subCategory.title}</Link>
-        <LinkOptions links={subCategory.links} />
-      </ListItem>
-    })}
-    
-  </Wrapper>
+const SubMenu = ({ subCategories }) => {
+  return (
+    <Wrapper>
+      {subCategories.map(subCategory => {
+        return (
+          <ListItem key={subCategory.title}>
+            <Link href={subCategory.url}>{subCategory.title}</Link>
+            <LinkOptions links={subCategory.links} />
+          </ListItem>
+        );
+      })}
+    </Wrapper>
+  );
 };
 
 export default SubMenu;

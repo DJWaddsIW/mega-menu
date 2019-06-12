@@ -10,8 +10,9 @@ const Wrapper = styled.li`
 `;
 
 const Link = styled.a`
+  font-size: 16px;
   padding: 8px 10px;
-  color: #042E61;
+  color: #032f61;
   padding-left: 8px;
   text-decoration: none;
   display: block;
@@ -26,6 +27,9 @@ const Link = styled.a`
     position: absolute;
     right: 0;
     font-weight: bolder;
+    font-family: monospace;
+    font-size: 120%;
+    line-height: initial;
   }
 `;
 
