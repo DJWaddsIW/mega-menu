@@ -1,21 +1,12 @@
 import React from 'react';
-import styled from "styled-components";
-
-const Link = styled.a`
-  text-decoration: none;
-  display: inline-block;
-  padding: 8px 10px;
-  font-weight: bolder;
-  &:hover {
-    text-decoration: underline;
-  }
-`;
+// import styled from "styled-components";
+import LinkOption from './LinkOption';
 
 
 const LinkOptions = ({links}) => {
   return <ul>
     {links.map(link => {
-      return <li key={link.title}><Link href={link.url}>{link.title}</Link></li>
+      return <LinkOption link={link} />
     })}
   </ul>
 };

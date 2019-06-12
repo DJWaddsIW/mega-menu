@@ -3,12 +3,15 @@ import styled from "styled-components";
 import SubMenu from './SubMenu';
 
 const Wrapper = styled.ul`
+  font-family: Nationale, sans-serif;
   background-color: white;
   display: flex;
-  justify-content: space-between;
+  border-top: 2px solid #E1E8EC;
+  border-bottom: 2px solid #E1E8EC;
 `;
 
 const ListItem = styled.li`
+  text-align: center;
   position: relative;
   display: block;
   width: 100%;
@@ -24,7 +27,11 @@ const ListItem = styled.li`
 `;
 
 const Link = styled.a`
+  color: #042E61;
   text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  font-weight: bolder;
   display: inline-block;
   padding: 8px 10px;
 `;
