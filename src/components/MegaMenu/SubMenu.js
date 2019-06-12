@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import LinkOptions from './LinkOptions';
+import LinkOptions from './Options';
 
 const Wrapper = styled.ul`
   display: flex;

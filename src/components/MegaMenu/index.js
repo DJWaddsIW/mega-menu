@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import SubMenu from './SubMenu';
+import { fadeIn } from '../../styles/keyframes';
 
 const Wrapper = styled.ul`
   font-family: Nationale, sans-serif;
@@ -17,9 +18,12 @@ const ListItem = styled.li`
   width: 100%;
   > ul {
     display: none;
+    opacity: 0;
   }
   &:hover > ul {
     display: flex;
+    animation: ${fadeIn} 0.3s ease-in-out;
+    opacity: 1;
   }
   &:hover > a {
     border-bottom: 4px solid;
@@ -36,7 +40,7 @@ const Link = styled.a`
   padding: 8px 10px;
 `;
 
-const Menu = ({ menu }) => {
+const MegaMenu = ({ menu }) => {
   return (
     <Wrapper>
       <ListItem><Link href="www.mag.co.uk">Home</Link></ListItem>
@@ -50,4 +54,4 @@ const Menu = ({ menu }) => {
   );
 }
 
-export default Menu;
+export default MegaMenu;

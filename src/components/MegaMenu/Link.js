@@ -7,29 +7,31 @@ const Wrapper = styled.li`
   flex-direction: row;
   font-weight: 400;
   font-size: 14px;
-  padding: 8px 10px;
 `;
 
 const Link = styled.a`
+  padding: 8px 10px;
   color: #042E61;
   padding-left: 8px;
   text-decoration: none;
-  display: inline-block;
+  display: block;
+  width: 100%;
+  position: relative;
   &:hover {
     text-decoration: underline;
   }
-`;
-
-const Arrow = styled.p`
-  color: red;
-  text-align: right;
-  font-weight: bolder;
+  &::after {
+    content: '>';
+    color: red;
+    position: absolute;
+    right: 0;
+    font-weight: bolder;
+  }
 `;
 
 const LinkOption = ({link}) => {
-  return <Wrapper key={link.title}>
+  return <Wrapper>
       <Link href={link.url}>{link.title}</Link>
-      <Arrow>></Arrow>
   </Wrapper>
 };
 

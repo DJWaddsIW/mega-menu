@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import Menu from './components/Menu';
+import Menu from './components/MegaMenu/';
 import GlobalStyle from './GlobalStyle';
 
 const Wrapper = styled.div`
@@ -13,11 +13,11 @@ const Wrapper = styled.div`
   height: 100%;
 `;
 
-
 const App = ({ data: {menu} }) => {
   return (
     <Wrapper>
       <GlobalStyle />
+      <h1>Mega Menu</h1>
       <Menu menu={menu} />
     </Wrapper>
   );
