@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.li`
@@ -7,22 +7,24 @@ const Wrapper = styled.li`
   flex-direction: row;
   font-weight: 400;
   font-size: 14px;
+  right: 0;
 `;
 
 const Link = styled.a`
   font-size: 16px;
   padding: 8px 10px;
   color: #032f61;
-  padding-left: 8px;
+  padding-left: 16px;
   text-decoration: none;
   display: block;
   width: 100%;
+  max-width: 240px;
   position: relative;
   &:hover {
     text-decoration: underline;
   }
   &::after {
-    content: '>';
+    content: ">";
     color: red;
     position: absolute;
     right: 0;
@@ -33,10 +35,12 @@ const Link = styled.a`
   }
 `;
 
-const LinkOption = ({link}) => {
-  return <Wrapper>
+const LinkOption = ({ link }) => {
+  return (
+    <Wrapper>
       <Link href={link.url}>{link.title}</Link>
-  </Wrapper>
+    </Wrapper>
+  );
 };
 
 export default LinkOption;

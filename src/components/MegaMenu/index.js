@@ -4,7 +4,7 @@ import SubMenu from "./SubMenu";
 import { fadeIn } from "../../styles/keyframes";
 
 const MenuWrapper = styled.div`
-  font-family: Nationale, sans-serif;
+  font-family: 'Nationale', sans-serif;
   background-color: white;
   border-top: 1px solid #e1e8ec;
   border-bottom: 2px double #e1e8ec;
@@ -14,6 +14,7 @@ const MenuWrapper = styled.div`
 const Menu = styled.ul`
   display: flex;
   width: fit-content;
+  max-width: 1280px;
   &:hover li:first-child > a {
     border: 0 none;
   }
@@ -25,11 +26,11 @@ const ListItem = styled.li`
   display: block;
   padding: 0 10px;
   margin-bottom: -2px;
-  > ul {
+  > span > ul {
     display: none;
     opacity: 0;
   }
-  &:hover > ul {
+  &:hover > span > ul {
     display: flex;
     animation: ${fadeIn} 0.3s ease-in-out;
     opacity: 1;
@@ -50,6 +51,7 @@ const Link = styled.a`
   display: inline-block;
   padding: 8px 10px;
   font-size: 16px;
+  white-space: nowrap;
 `;
 
 const MegaMenu = ({ menu }) => {
@@ -57,7 +59,7 @@ const MegaMenu = ({ menu }) => {
     <MenuWrapper>
       <Menu>
         <ListItem>
-          <Link href="www.mag.co.uk">Home</Link>
+          <Link href="/">Home</Link>
         </ListItem>
         {menu.map(item => {
           return (
