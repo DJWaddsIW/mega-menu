@@ -3,24 +3,26 @@ import styled from "styled-components";
 
 const Wrapper = styled.li`
   width: calc(100% - 16px);
-  display: grid;
-  grid-template-columns: 80% 20%;
-  &:hover {
-    text-decoration: underline;
-  }
+  display: flex;
+  flex-direction: row;
+  font-weight: 400;
+  font-size: 14px;
   padding: 8px 10px;
-  background-color: lime;
 `;
 
 const Link = styled.a`
+  color: #042E61;
   padding-left: 8px;
   text-decoration: none;
   display: inline-block;
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 const Arrow = styled.p`
-  text-align: right;
   color: red;
+  text-align: right;
   font-weight: bolder;
 `;
 

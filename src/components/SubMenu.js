@@ -21,10 +21,12 @@ const ListItem = styled.li`
 `;
 
 const Link = styled.a`
+  color: #042E61;
   text-decoration: none;
   display: inline-block;
+  font-weight: 800;
+  font-size: 14px;
   padding: 8px 10px;
-  font-weight: bolder;
   &:hover {
     text-decoration: underline;
   }
