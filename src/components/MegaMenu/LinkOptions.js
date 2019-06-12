@@ -11,7 +11,6 @@ const Link = styled.a`
   }
 `;
 
-
 const LinkOptions = ({links}) => {
   return <ul>
     {links.map(link => {
