@@ -5,10 +5,10 @@ import SubMenu from './SubMenu';
 const Wrapper = styled.ul`
   background-color: white;
   display: flex;
-  justify-content: space-between;
 `;
 
 const ListItem = styled.li`
+  text-align: center;
   position: relative;
   display: block;
   width: 100%;
@@ -25,6 +25,7 @@ const ListItem = styled.li`
 
 const Link = styled.a`
   text-decoration: none;
+  font-weight: bolder;
   display: inline-block;
   padding: 8px 10px;
 `;

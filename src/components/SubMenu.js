@@ -10,6 +10,7 @@ const Wrapper = styled.ul`
   right: 0;
   margin: auto;
   background-color: white;
+  text-align: left;
   padding-left: calc(50vw - 640px);
 `;
 

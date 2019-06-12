@@ -139,6 +139,30 @@
           ]
         }
       ]
+    },
+    {
+      "title": "Suncare & Tanning",
+      "url": "",
+      "subCategories": [
+        {
+          "title": "All",
+          "url": "",
+          "links": [
+            {
+              "title": "Our Exclusives",
+              "url": "www.mag.co.uk/suncare-&-tanning/all/our-exclusives"
+            },
+            {
+              "title": "Best Sellers",
+              "url": "www.mag.co.uk/suncare-&-tanning/best-sellers"
+            },
+            {
+              "title": "Gift Sets",
+              "url": "www.mag.co.uk/suncare-&-tanning/gift-sets"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
