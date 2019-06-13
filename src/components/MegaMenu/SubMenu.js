@@ -18,10 +18,10 @@ const Wrapper = styled.span`
 
 const CategoriesLeft = styled.ul`
   display: flex;
-  max-width: 960px;
+  max-width: ${props => props.hasRight ? '960px' : '1280px' };
   flex-wrap: wrap;
   @media screen and (max-width:960px) {
-    max-width: 50%;
+    max-width: ${props => props.hasRight ? '50%' : '100%' }
   }
   padding-bottom: 10px;
 `;
@@ -64,12 +64,13 @@ const Title = styled.span`
 `;
 
 const SubMenu = ({ subCategories }) => {
+  const leftItems = subCategories.filter(x => x.alignRight !== true);
+  const rightItems = subCategories.filter(x => x.alignRight === true);
   return (
     <Wrapper>
-      <CategoriesLeft>
-        {subCategories
-          .filter(x => x.alignRight !== true)
-          .map(subCategory => {
+      <CategoriesLeft hasRight={rightItems.length > 0}>
+        {
+          leftItems.map(subCategory => {
             return (
               <ListItem key={subCategory.title}>
                 {subCategory.url !== undefined ? (
@@ -83,9 +84,8 @@ const SubMenu = ({ subCategories }) => {
           })}
       </CategoriesLeft>
       <CategoriesRight>
-        {subCategories
-          .filter(x => x.alignRight === true)
-          .map(subCategory => {
+        {
+          rightItems.map(subCategory => {
             return (
               <RightListItem key={subCategory.title}>
                 {subCategory.url !== undefined ? (

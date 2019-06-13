@@ -93,20 +93,34 @@
           ]
         },
         {
-          "title": "Popular Brands",
-          "alignRight": true,
+          "title": "All0",
+          "url": "",
           "links": [
             {
-              "title": "Clinque",
-              "url": "www.mag.co.uk/fragrance/perfume-&-aftershave/clinque"
+              "title": "Our Exclusives",
+              "url": "www.mag.co.uk/makeup/all/our-exclusives"
             },
             {
-              "title": "Lancome",
-              "url": "www.mag.co.uk/fragrance/perfume-&-aftershave/lancome"
+              "title": "Best Sellers",
+              "url": "www.mag.co.uk/makeup/best-sellers"
             },
             {
-              "title": "Jo Molone London",
-              "url": "www.mag.co.uk/fragrance/perfume-&-aftershave/jo-molone-london"
+              "title": "Gift Sets",
+              "url": "www.mag.co.uk/makeup/gift-sets"
+            }
+          ]
+        },
+        {
+          "title": "Face0",
+          "url": "",
+          "links": [
+            {
+              "title": "Blusher",
+              "url": "www.mag.co.uk/makeup/face/blusher"
+            },
+            {
+              "title": "Concealer",
+              "url": "www.mag.co.uk/makeup/face/concealer"
             }
           ]
         }

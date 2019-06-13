@@ -10,6 +10,9 @@ const MenuWrapper = styled.div`
   border-bottom: 2px double #e1e8ec;
   font-size: 16px;
   z-index: 100;
+  @media screen and (max-width:640px) {
+    display: none;
+  }
 `;
 
 const Menu = styled.ul`
