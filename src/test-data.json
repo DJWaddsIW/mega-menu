@@ -2,37 +2,37 @@
   "menu": [
     {
       "title": "Fragrance",
-      "url": "",
+      "url": "/",
       "subCategories": [
         {
           "title": "All",
-          "url": "",
+          "url": "/all",
           "links": [
             {
               "title": "Our Exclusives",
-              "url": "www.mag.co.uk/fragrance/all/our-exclusives"
+              "url": "/fragrance/all/our-exclusives"
             },
             {
               "title": "Best Sellers",
-              "url": "www.mag.co.uk/fragrance/all/best-sellers"
+              "url": "/fragrance/all/best-sellers"
             },
             {
               "title": "Gift Sets",
-              "url": "www.mag.co.uk/fragrance/all/gift-sets"
+              "url": "/fragrance/all/gift-sets"
             }
           ]
         },
         {
           "title": "Perfume & Aftershave",
-          "url": "",
+          "url": "/perfumes",
           "links": [
             {
               "title": "For Her",
-              "url": "www.mag.co.uk/fragrance/perfume-&-aftershave/for-her"
+              "url": "/fragrance/perfume-&-aftershave/for-her"
             },
             {
               "title": "For Him",
-              "url": "www.mag.co.uk/fragrance/perfume-&-aftershave/for-him"
+              "url": "/fragrance/perfume-&-aftershave/for-him"
             }
           ]
         },
@@ -42,15 +42,15 @@
           "links": [
             {
               "title": "Estee",
-              "url": "www.mag.co.uk/fragrance/popular-brands/estee"
+              "url": "/fragrance/popular-brands/estee"
             },
             {
               "title": "Lancome",
-              "url": "www.mag.co.uk/fragrance/perfume-&-aftershave/lancome"
+              "url": "/fragrance/perfume-&-aftershave/lancome"
             },
             {
               "title": "Hugo Boss",
-              "url": "www.mag.co.uk/fragrance/perfume-&-aftershave/hugo-boss"
+              "url": "/fragrance/perfume-&-aftershave/hugo-boss"
             }
           ]
         }
@@ -58,69 +58,69 @@
     },
     {
       "title": "Makeup",
-      "url": "",
+      "url": "/makeup",
       "subCategories": [
         {
           "title": "All",
-          "url": "",
+          "url": "/all",
           "links": [
             {
               "title": "Our Exclusives",
-              "url": "www.mag.co.uk/makeup/all/our-exclusives"
+              "url": "/makeup/all/our-exclusives"
             },
             {
               "title": "Best Sellers",
-              "url": "www.mag.co.uk/makeup/best-sellers"
+              "url": "/makeup/best-sellers"
             },
             {
               "title": "Gift Sets",
-              "url": "www.mag.co.uk/makeup/gift-sets"
+              "url": "/makeup/gift-sets"
             }
           ]
         },
         {
           "title": "Face",
-          "url": "",
+          "url": "/face",
           "links": [
             {
               "title": "Blusher",
-              "url": "www.mag.co.uk/makeup/face/blusher"
+              "url": "/makeup/face/blusher"
             },
             {
               "title": "Concealer",
-              "url": "www.mag.co.uk/makeup/face/concealer"
+              "url": "/makeup/face/concealer"
             }
           ]
         },
         {
-          "title": "All0",
-          "url": "",
+          "title": "Exclusives",
+          "url": "/exclusives",
           "links": [
             {
               "title": "Our Exclusives",
-              "url": "www.mag.co.uk/makeup/all/our-exclusives"
+              "url": "/makeup/all/our-exclusives"
             },
             {
               "title": "Best Sellers",
-              "url": "www.mag.co.uk/makeup/best-sellers"
+              "url": "/makeup/best-sellers"
             },
             {
               "title": "Gift Sets",
-              "url": "www.mag.co.uk/makeup/gift-sets"
+              "url": "/makeup/gift-sets"
             }
           ]
         },
         {
-          "title": "Face0",
-          "url": "",
+          "title": "Makeup",
+          "url": "/makeup",
           "links": [
             {
               "title": "Blusher",
-              "url": "www.mag.co.uk/makeup/face/blusher"
+              "url": "/makeup/face/blusher"
             },
             {
               "title": "Concealer",
-              "url": "www.mag.co.uk/makeup/face/concealer"
+              "url": "/makeup/face/concealer"
             }
           ]
         }
@@ -128,51 +128,51 @@
     },
     {
       "title": "Skin Care",
-      "url": "",
+      "url": "/",
       "subCategories": [
         {
           "title": "All",
-          "url": "",
+          "url": "/",
           "links": [
             {
               "title": "Our Exclusives",
-              "url": "www.mag.co.uk/skin-care/all/our-exclusives"
+              "url": "/skin-care/all/our-exclusives"
             },
             {
               "title": "Best Sellers",
-              "url": "www.mag.co.uk/skin-care/best-sellers"
+              "url": "/skin-care/best-sellers"
             },
             {
               "title": "Gift Sets",
-              "url": "www.mag.co.uk/skin-care/gift-sets"
+              "url": "/skin-care/gift-sets"
             }
           ]
         },
         {
           "title": "Face",
-          "url": "",
+          "url": "/",
           "links": [
             {
               "title": "Cleanser",
-              "url": "www.mag.co.uk/skin-care/face/cleanser"
+              "url": "/skin-care/face/cleanser"
             },
             {
               "title": "Repair",
-              "url": "www.mag.co.uk/skin-care/face/repair"
+              "url": "/skin-care/face/repair"
             }
           ]
         },
         {
           "title": "Face0",
-          "url": "",
+          "url": "/",
           "links": [
             {
               "title": "Cleanser",
-              "url": "www.mag.co.uk/skin-care/face/cleanser"
+              "url": "/skin-care/face/cleanser"
             },
             {
               "title": "Repair",
-              "url": "www.mag.co.uk/skin-care/face/repair"
+              "url": "/skin-care/face/repair"
             }
           ]
         },
@@ -182,73 +182,73 @@
           "links": [
             {
               "title": "Estee",
-              "url": "www.mag.co.uk/fragrance/popular-brands/estee"
+              "url": "/fragrance/popular-brands/estee"
             },
             {
               "title": "Clinque",
-              "url": "www.mag.co.uk/fragrance/perfume-&-aftershave/clinque"
+              "url": "/fragrance/perfume-&-aftershave/clinque"
             },
             {
               "title": "Lancome",
-              "url": "www.mag.co.uk/fragrance/perfume-&-aftershave/lancome"
+              "url": "/fragrance/perfume-&-aftershave/lancome"
             },
             {
               "title": "Hugo Boss",
-              "url": "www.mag.co.uk/fragrance/perfume-&-aftershave/hugo-boss"
+              "url": "/fragrance/perfume-&-aftershave/hugo-boss"
             },
             {
               "title": "Jo Molone London",
-              "url": "www.mag.co.uk/fragrance/perfume-&-aftershave/jo-molone-london"
+              "url": "/fragrance/perfume-&-aftershave/jo-molone-london"
             }
           ]
         },
         {
           "title": "All1",
-          "url": "",
+          "url": "/",
           "links": [
             {
               "title": "Our Exclusives",
-              "url": "www.mag.co.uk/skin-care/all/our-exclusives"
+              "url": "/skin-care/all/our-exclusives"
             },
             {
               "title": "Best Sellers",
-              "url": "www.mag.co.uk/skin-care/best-sellers"
+              "url": "/skin-care/best-sellers"
             },
             {
               "title": "Gift Sets",
-              "url": "www.mag.co.uk/skin-care/gift-sets"
+              "url": "/skin-care/gift-sets"
             }
           ]
         },
         {
           "title": "All2",
-          "url": "",
+          "url": "/",
           "links": [
             {
               "title": "Our Exclusives",
-              "url": "www.mag.co.uk/skin-care/all/our-exclusives"
+              "url": "/skin-care/all/our-exclusives"
             },
             {
               "title": "Best Sellers",
-              "url": "www.mag.co.uk/skin-care/best-sellers"
+              "url": "/skin-care/best-sellers"
             },
             {
               "title": "Gift Sets",
-              "url": "www.mag.co.uk/skin-care/gift-sets"
+              "url": "/skin-care/gift-sets"
             }
           ]
         },
         {
           "title": "Face3",
-          "url": "",
+          "url": "/",
           "links": [
             {
               "title": "Cleanser",
-              "url": "www.mag.co.uk/skin-care/face/cleanser"
+              "url": "/skin-care/face/cleanser"
             },
             {
               "title": "Repair",
-              "url": "www.mag.co.uk/skin-care/face/repair"
+              "url": "/skin-care/face/repair"
             }
           ]
         }
@@ -256,23 +256,23 @@
     },
     {
       "title": "Suncare & Tanning",
-      "url": "",
+      "url": "/",
       "subCategories": [
         {
           "title": "All",
-          "url": "",
+          "url": "/",
           "links": [
             {
               "title": "Our Exclusives",
-              "url": "www.mag.co.uk/suncare-&-tanning/all/our-exclusives"
+              "url": "/suncare-&-tanning/all/our-exclusives"
             },
             {
               "title": "Best Sellers",
-              "url": "www.mag.co.uk/suncare-&-tanning/best-sellers"
+              "url": "/suncare-&-tanning/best-sellers"
             },
             {
               "title": "Gift Sets",
-              "url": "www.mag.co.uk/suncare-&-tanning/gift-sets"
+              "url": "/suncare-&-tanning/gift-sets"
             }
           ]
         },
@@ -282,15 +282,15 @@
           "links": [
             {
               "title": "Estee",
-              "url": "www.mag.co.uk/fragrance/popular-brands/estee"
+              "url": "/fragrance/popular-brands/estee"
             },
             {
               "title": "Clinque",
-              "url": "www.mag.co.uk/fragrance/perfume-&-aftershave/clinque"
+              "url": "/fragrance/perfume-&-aftershave/clinque"
             },
             {
               "title": "Lancome",
-              "url": "www.mag.co.uk/fragrance/perfume-&-aftershave/lancome"
+              "url": "/fragrance/perfume-&-aftershave/lancome"
             }
           ]
         }

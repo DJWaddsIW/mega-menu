@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import { linkCSS } from './styling';
 
-const Wrapper = styled.li`
+const LinkWrapper = styled.li`
   width: calc(100% - 16px);
   display: flex;
   flex-direction: row;
@@ -11,15 +12,10 @@ const Wrapper = styled.li`
 `;
 
 const Link = styled.a`
-  font-size: 16px;
-  padding: 8px 10px;
-  color: #032f61;
-  padding-left: 16px;
-  text-decoration: none;
-  display: block;
+  ${linkCSS};
+  padding: 8px 10px 8px 16px;
   width: 100%;
   max-width: 240px;
-  position: relative;
   &:hover {
     text-decoration: underline;
   }
@@ -37,9 +33,9 @@ const Link = styled.a`
 
 const LinkOption = ({ link }) => {
   return (
-    <Wrapper>
+    <LinkWrapper>
       <Link href={link.url}>{link.title}</Link>
-    </Wrapper>
+    </LinkWrapper>
   );
 };
 

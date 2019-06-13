@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Options from "./Options";
+import { linkCSS } from './styling';
 
 const Wrapper = styled.span`
   display: flex;
@@ -44,11 +45,8 @@ const RightListItem = styled(ListItem)`
 `;
 
 const Link = styled.a`
-  color: #032f61;
-  text-decoration: none;
-  display: block;
+  ${linkCSS};
   font-weight: bolder;
-  font-size: 16px;
   padding: 8px 10px 16px;
   &:hover {
     text-decoration: underline;
@@ -56,10 +54,9 @@ const Link = styled.a`
 `;
 
 const Title = styled.span`
-  color: #032f61;
+  ${linkCSS};
   display: inline-block;
   font-weight: bolder;
-  font-size: 16px;
   padding: 8px 10px 16px;
 `;
 

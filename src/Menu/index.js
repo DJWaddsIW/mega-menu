@@ -1,16 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 import SubMenu from "./SubMenu";
-import { fadeIn } from "../../styles/keyframes";
+import { linkCSS, fadeIn, GlobalStyle } from './styling';
 
 const MenuWrapper = styled.div`
-  font-family: 'Nationale', sans-serif;
   background-color: white;
   border-top: 1px solid #e1e8ec;
   border-bottom: 2px double #e1e8ec;
   font-size: 16px;
   z-index: 100;
-  @media screen and (max-width:640px) {
+  @media screen and (max-width: ${props => props.displayFrom}px) {
     display: none;
   }
 `;
@@ -23,9 +22,18 @@ const Menu = styled.ul`
   &:hover li:first-child > a {
     border: 0 none;
   }
-  &:hover + div {
-    display: block;
-  }
+`;
+
+const Overlay = styled.li`
+  position: fixed;
+  width: 100%;
+  background: #333;
+  height: 100%;
+  z-index: 99;
+  left: 0;
+  opacity: 0.614;
+  display: none;
+  margin-top: 48px;
 `;
 
 const ListItem = styled.li`
@@ -50,34 +58,22 @@ const ListItem = styled.li`
   &:first-child > a {
     border-bottom: 4px solid;
   }
+
+  &:not(:first-child):hover ~ ${Overlay} {
+    display: block;
+  }
 `;
 
 const Link = styled.a`
-  color: #032f61;
-  text-decoration: none;
-  font-weight: 600;
+  ${linkCSS};
   font-weight: bolder;
-  display: inline-block;
   padding: 8px 10px;
-  font-size: 16px;
-  white-space: nowrap;
 `;
 
-const Overlay = styled.div`
-    position: fixed;
-    width: 100%;
-    background: #333;
-    height: 100%;
-    z-index: 99;
-    left: 0;
-    opacity: 0.614;
-    display: none;
-    margin-top: 2px;
-`;
-
-const MegaMenu = ({ menu }) => {
+const MegaMenu = ({ data : { menu }, displayFrom = 640 }) => {
   return (
-    <MenuWrapper>
+    <MenuWrapper displayFrom={displayFrom} >
+      <GlobalStyle />
       <Menu>
         <ListItem>
           <Link href="/">Home</Link>
@@ -90,8 +86,8 @@ const MegaMenu = ({ menu }) => {
             </ListItem>
           );
         })}
+        <Overlay />
       </Menu>
-      <Overlay />
     </MenuWrapper>
   );
 };

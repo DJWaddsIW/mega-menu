@@ -1,9 +1,28 @@
-import { createGlobalStyle } from 'styled-components';
+import { css, keyframes, createGlobalStyle } from 'styled-components';
+ 
+export const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`
+export const linkCSS = css`
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;  
+  color: #032f61;
+  white-space: nowrap;
+  position: relative;
+`;
 
-const GlobalStyle = createGlobalStyle`
-
+export const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
   html {
     overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
   }
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -19,7 +38,7 @@ const GlobalStyle = createGlobalStyle`
   figure, figcaption, footer, header, hgroup, 
   menu, nav, output, ruby, section, summary,
   time, mark, audio, video {
-    font-family: 'Nationale', sans-serif;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
     border: 0;
@@ -54,5 +73,3 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
   }
 `;
-
-export default GlobalStyle;
