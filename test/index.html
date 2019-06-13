@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+  <body onload="createWebComponents()">
+    <div id="root"></div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zone.js/0.9.1/zone.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/2.2.10/custom-elements-es5-adapter.js"></script>
+  <script src="http://localhost:5555/main.js"></script>
+  <script>
+      var data = {
+        menu: [
+          {
+            title: "Fragrance",
+            url: "",
+            subCategories: [
+              {
+                title: "All",
+                url: "",
+                links: [
+                  {
+                    title: "Our Exclusives",
+                    url: "www.mag.co.uk/fragrance/all/our-exclusives"
+                  },
+                  {
+                    title: "Best Sellers",
+                    url: "www.mag.co.uk/fragrance/all/best-sellers"
+                  },
+                  {
+                    title: "Gift Sets",
+                    url: "www.mag.co.uk/fragrance/all/gift-sets"
+                  }
+                ]
+              },
+              {
+                title: "Perfume & Aftershave",
+                url: "",
+                links: [
+                  {
+                    title: "For Her",
+                    url: "www.mag.co.uk/fragrance/perfume-&-aftershave/for-her"
+                  },
+                  {
+                    title: "For Him",
+                    url: "www.mag.co.uk/fragrance/perfume-&-aftershave/for-him"
+                  }
+                ]
+              },
+              {
+                title: "Popular Brands",
+                alignRight: true,
+                links: [
+                  {
+                    title: "Estee",
+                    url: "www.mag.co.uk/fragrance/popular-brands/estee"
+                  },
+                  {
+                    title: "Lancome",
+                    url: "www.mag.co.uk/fragrance/perfume-&-aftershave/lancome"
+                  },
+                  {
+                    title: "Hugo Boss",
+                    url:
+                      "www.mag.co.uk/fragrance/perfume-&-aftershave/hugo-boss"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            title: "Makeup",
+            url: "",
+            subCategories: [
+              {
+                title: "All",
+                url: "",
+                links: [
+                  {
+                    title: "Our Exclusives",
+                    url: "www.mag.co.uk/makeup/all/our-exclusives"
+                  },
+                  {
+                    title: "Best Sellers",
+                    url: "www.mag.co.uk/makeup/best-sellers"
+                  },
+                  {
+                    title: "Gift Sets",
+                    url: "www.mag.co.uk/makeup/gift-sets"
+                  }
+                ]
+              },
+              {
+                title: "Face",
+                url: "",
+                links: [
+                  {
+                    title: "Blusher",
+                    url: "www.mag.co.uk/makeup/face/blusher"
+                  },
+                  {
+                    title: "Concealer",
+                    url: "www.mag.co.uk/makeup/face/concealer"
+                  }
+                ]
+              },
+              {
+                title: "All0",
+                url: "",
+                links: [
+                  {
+                    title: "Our Exclusives",
+                    url: "www.mag.co.uk/makeup/all/our-exclusives"
+                  },
+                  {
+                    title: "Best Sellers",
+                    url: "www.mag.co.uk/makeup/best-sellers"
+                  },
+                  {
+                    title: "Gift Sets",
+                    url: "www.mag.co.uk/makeup/gift-sets"
+                  }
+                ]
+              },
+              {
+                title: "Face0",
+                url: "",
+                links: [
+                  {
+                    title: "Blusher",
+                    url: "www.mag.co.uk/makeup/face/blusher"
+                  },
+                  {
+                    title: "Concealer",
+                    url: "www.mag.co.uk/makeup/face/concealer"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            title: "Skin Care",
+            url: "",
+            subCategories: [
+              {
+                title: "All",
+                url: "",
+                links: [
+                  {
+                    title: "Our Exclusives",
+                    url: "www.mag.co.uk/skin-care/all/our-exclusives"
+                  },
+                  {
+                    title: "Best Sellers",
+                    url: "www.mag.co.uk/skin-care/best-sellers"
+                  },
+                  {
+                    title: "Gift Sets",
+                    url: "www.mag.co.uk/skin-care/gift-sets"
+                  }
+                ]
+              },
+              {
+                title: "Face",
+                url: "",
+                links: [
+                  {
+                    title: "Cleanser",
+                    url: "www.mag.co.uk/skin-care/face/cleanser"
+                  },
+                  {
+                    title: "Repair",
+                    url: "www.mag.co.uk/skin-care/face/repair"
+                  }
+                ]
+              },
+              {
+                title: "Face0",
+                url: "",
+                links: [
+                  {
+                    title: "Cleanser",
+                    url: "www.mag.co.uk/skin-care/face/cleanser"
+                  },
+                  {
+                    title: "Repair",
+                    url: "www.mag.co.uk/skin-care/face/repair"
+                  }
+                ]
+              },
+              {
+                title: "Popular Brands",
+                alignRight: true,
+                links: [
+                  {
+                    title: "Estee",
+                    url: "www.mag.co.uk/fragrance/popular-brands/estee"
+                  },
+                  {
+                    title: "Clinque",
+                    url: "www.mag.co.uk/fragrance/perfume-&-aftershave/clinque"
+                  },
+                  {
+                    title: "Lancome",
+                    url: "www.mag.co.uk/fragrance/perfume-&-aftershave/lancome"
+                  },
+                  {
+                    title: "Hugo Boss",
+                    url:
+                      "www.mag.co.uk/fragrance/perfume-&-aftershave/hugo-boss"
+                  },
+                  {
+                    title: "Jo Molone London",
+                    url:
+                      "www.mag.co.uk/fragrance/perfume-&-aftershave/jo-molone-london"
+                  }
+                ]
+              },
+              {
+                title: "All1",
+                url: "",
+                links: [
+                  {
+                    title: "Our Exclusives",
+                    url: "www.mag.co.uk/skin-care/all/our-exclusives"
+                  },
+                  {
+                    title: "Best Sellers",
+                    url: "www.mag.co.uk/skin-care/best-sellers"
+                  },
+                  {
+                    title: "Gift Sets",
+                    url: "www.mag.co.uk/skin-care/gift-sets"
+                  }
+                ]
+              },
+              {
+                title: "All2",
+                url: "",
+                links: [
+                  {
+                    title: "Our Exclusives",
+                    url: "www.mag.co.uk/skin-care/all/our-exclusives"
+                  },
+                  {
+                    title: "Best Sellers",
+                    url: "www.mag.co.uk/skin-care/best-sellers"
+                  },
+                  {
+                    title: "Gift Sets",
+                    url: "www.mag.co.uk/skin-care/gift-sets"
+                  }
+                ]
+              },
+              {
+                title: "Face3",
+                url: "",
+                links: [
+                  {
+                    title: "Cleanser",
+                    url: "www.mag.co.uk/skin-care/face/cleanser"
+                  },
+                  {
+                    title: "Repair",
+                    url: "www.mag.co.uk/skin-care/face/repair"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            title: "Suncare & Tanning",
+            url: "",
+            subCategories: [
+              {
+                title: "All",
+                url: "",
+                links: [
+                  {
+                    title: "Our Exclusives",
+                    url: "www.mag.co.uk/suncare-&-tanning/all/our-exclusives"
+                  },
+                  {
+                    title: "Best Sellers",
+                    url: "www.mag.co.uk/suncare-&-tanning/best-sellers"
+                  },
+                  {
+                    title: "Gift Sets",
+                    url: "www.mag.co.uk/suncare-&-tanning/gift-sets"
+                  }
+                ]
+              },
+              {
+                title: "Popular Brands",
+                alignRight: true,
+                links: [
+                  {
+                    title: "Estee",
+                    url: "www.mag.co.uk/fragrance/popular-brands/estee"
+                  },
+                  {
+                    title: "Clinque",
+                    url: "www.mag.co.uk/fragrance/perfume-&-aftershave/clinque"
+                  },
+                  {
+                    title: "Lancome",
+                    url: "www.mag.co.uk/fragrance/perfume-&-aftershave/lancome"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      };
+
+      var createWebComponents = function() {
+        var el = document.createElement('mega-menu');
+        el.setAttribute("data", JSON.stringify(data));
+        var root = document.getElementById("root");
+        root.appendChild(el);
+      }
+
+  </script>
+</html>

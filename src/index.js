@@ -2,10 +2,9 @@
 import * as React from 'react';
 import { render, unmountComponentAtNode } from 'react-dom';
 import htmlToReact from 'html-to-react';
+import Menu from './Menu';
 
-import { Menu } from './Menu.js';
-
-class ReactElement extends HTMLElement {
+class MegaMenu extends HTMLElement {
   
   constructor() {
     super();
@@ -68,11 +67,10 @@ class ReactElement extends HTMLElement {
 
   convert(propTypes, attrName, attrValue) {
     const propName = Object.keys(propTypes)
-      .find(key => key.toLowerCase() == attrName);
+      .find(key => key.toLowerCase() === attrName);
     let value = attrValue;
-    if (attrValue === 'true' || attrValue === 'false') 
-      // eslint-disable-next-line eqeqeq
-      value = attrValue == 'true';      
+    if (attrValue === 'true' || attrValue === 'false')
+      value = attrValue === 'true';      
     else if (!isNaN(attrValue) && attrValue !== '') 
       value = +attrValue;      
     else if (/^{.*}/.exec(attrValue)) 
@@ -85,4 +83,4 @@ class ReactElement extends HTMLElement {
 
 }
 
-customElements.define('react-el', ReactElement);
+customElements.define('mega-menu', MegaMenu);

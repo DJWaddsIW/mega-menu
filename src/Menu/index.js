@@ -22,9 +22,18 @@ const Menu = styled.ul`
   &:hover li:first-child > a {
     border: 0 none;
   }
-  &:hover + div {
-    display: block;
-  }
+`;
+
+const Overlay = styled.li`
+  position: fixed;
+  width: 100%;
+  background: #333;
+  height: 100%;
+  z-index: 99;
+  left: 0;
+  opacity: 0.614;
+  display: none;
+  margin-top: 48px;
 `;
 
 const ListItem = styled.li`
@@ -49,6 +58,10 @@ const ListItem = styled.li`
   &:first-child > a {
     border-bottom: 4px solid;
   }
+
+  &:not(:first-child):hover ~ ${Overlay} {
+    display: block;
+  }
 `;
 
 const Link = styled.a`
@@ -57,19 +70,7 @@ const Link = styled.a`
   padding: 8px 10px;
 `;
 
-const Overlay = styled.div`
-  position: fixed;
-  width: 100%;
-  background: #333;
-  height: 100%;
-  z-index: 99;
-  left: 0;
-  opacity: 0.614;
-  display: none;
-  margin-top: 2px;
-`;
-
-const MegaMenu = ({ data, displayFrom = 640 }) => {
+const MegaMenu = ({ data : { menu }, displayFrom = 640 }) => {
   return (
     <MenuWrapper displayFrom={displayFrom} >
       <GlobalStyle />
@@ -77,7 +78,7 @@ const MegaMenu = ({ data, displayFrom = 640 }) => {
         <ListItem>
           <Link href="/">Home</Link>
         </ListItem>
-        {data.map(item => {
+        {menu.map(item => {
           return (
             <ListItem key={item.title}>
               <Link href={item.url}>{item.title}</Link>
@@ -85,8 +86,8 @@ const MegaMenu = ({ data, displayFrom = 640 }) => {
             </ListItem>
           );
         })}
+        <Overlay />
       </Menu>
-      <Overlay />
     </MenuWrapper>
   );
 };
