@@ -1,13 +1,15 @@
 {
-  "name": "mega-menu",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@infinityworks/mega-menu",
+  "version": "0.0.1",
+  "description": "a menu component for large lists of links",
+  "main": "dist/main.js",
   "dependencies": {
     "react-scripts": "3.0.1"
   },
   "scripts": {
     "start": "npm run build && serve -l 5555 dist",
-    "build": "webpack --mode development"
+    "build": "webpack --mode development",
+    "prepublish": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
