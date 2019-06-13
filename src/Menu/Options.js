@@ -1,10 +1,10 @@
 import React from 'react';
-import LinkOption from './Link';
+import Link from './Link';
 
 const Options = ({links}) => {
   return <ul>
     {links.map(link => {
-      return <LinkOption link={link} key={link.title} />
+      return <Link link={link} key={link.title} />
     })}
   </ul>
 };
