@@ -11,7 +11,7 @@ const Wrapper = styled.span`
   margin: 0;
   background-color: white;
   text-align: left;
-  padding-left: calc(50vw - 640px);
+  padding: 0 calc(50vw - 640px);
   max-width: 1280px;
   justify-content: space-between;
 `;

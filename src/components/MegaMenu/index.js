@@ -9,14 +9,19 @@ const MenuWrapper = styled.div`
   border-top: 1px solid #e1e8ec;
   border-bottom: 2px double #e1e8ec;
   font-size: 16px;
+  z-index: 100;
 `;
 
 const Menu = styled.ul`
   display: flex;
   width: fit-content;
   max-width: 1280px;
+  position: relative;
   &:hover li:first-child > a {
     border: 0 none;
+  }
+  &:hover + div {
+    display: block;
   }
 `;
 
@@ -26,6 +31,7 @@ const ListItem = styled.li`
   display: block;
   padding: 0 10px;
   margin-bottom: -2px;
+  z-index: 100;
   > span > ul {
     display: none;
     opacity: 0;
@@ -54,6 +60,18 @@ const Link = styled.a`
   white-space: nowrap;
 `;
 
+const Overlay = styled.div`
+    position: fixed;
+    width: 100%;
+    background: #333;
+    height: 100%;
+    z-index: 99;
+    left: 0;
+    opacity: 0.614;
+    display: none;
+    margin-top: 2px;
+`;
+
 const MegaMenu = ({ menu }) => {
   return (
     <MenuWrapper>
@@ -70,6 +88,7 @@ const MegaMenu = ({ menu }) => {
           );
         })}
       </Menu>
+      <Overlay />
     </MenuWrapper>
   );
 };
